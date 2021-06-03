@@ -1,0 +1,73 @@
+.stock-card-container {
+  width: 21.375rem;
+  height: 13.8125rem;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: solid var(--positive-variation-color) 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.stock-card-container:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.negative-variation {
+  border-left: solid var(--negative-variation-color) 4px;
+}
+
+.stock-info-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stock-info-header h2, p {
+  margin: 0;
+}
+
+.stock-info-header h2 {
+  color: var(--text-color)
+}
+
+.stock-info-header p {
+  color: var(--text-color-light);
+  font-weight: 500;
+}
+
+.stock-info-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.stock-info-body .value {
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: bolder;
+}
+
+.stock-info-body .variation {
+  background-color: var(--positive-variation-color);
+  font-size: 14px;
+  color: var(--secondary-color);
+  padding: 0.25rem;
+  border-radius: 4px;
+  align-self: flex-end;
+  margin-top: 0.25rem;
+}
+
+.negative-variation .stock-info-body .variation {
+  background-color: var(--negative-variation-color);
+}
